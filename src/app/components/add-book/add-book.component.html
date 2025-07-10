@@ -1,4 +1,28 @@
 <div class="card">
   <h2>Add New Book</h2>
-  <p>Add Book Component - Ready for implementation</p>
-</div> 
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="title">Title</label>
+      <input id="title" type="text" formControlName="title">
+    <div *ngIf="bookForm.get('title')?.invalid && bookForm.get('title')?.touched" class="text-red-500 text-sm">
+        Title is required.
+    </div>
+    </div>
+
+    <div>
+      <label for="author">Author</label>
+      <input id="author" type="text" formControlName="author">
+    <div *ngIf="bookForm.get('author')?.invalid && bookForm.get('author')?.touched" class="text-red-500 text-sm">
+        Author is required.
+    </div>
+    </div>
+
+    <div>
+      <label for="status">Status</label>
+      <label><input type="radio" formControlName="status" value="read"> Read</label>
+      <label><input type="radio" formControlName="status" value="unread"> Unread</label>
+    </div>
+
+    <button type="submit" [disabled]="bookForm.invalid">Add Book</button>
+  </form>
+</div>
