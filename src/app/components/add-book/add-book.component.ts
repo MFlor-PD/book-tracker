@@ -6,7 +6,8 @@ import { BookService} from '../../services/book.service';
   selector: 'app-add-book',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './add-book.component.html'
+  templateUrl: './add-book.component.html',
+  styleUrls: ['./add-book.component.css']
 })
 export class AddBookComponent {
   bookForm: FormGroup;

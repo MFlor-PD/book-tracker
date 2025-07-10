@@ -1,0 +1,75 @@
+.card {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0d6efd; /* azul */
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+input[type="radio"] + span.read {
+  color: black;
+  font-weight: 300;
+}
+
+input[type="radio"] + span.unread {
+  color: black;
+  font-weight: 300;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  margin-right: 0.4rem;
+}
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[disabled] {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+button:not([disabled]):hover {
+  background-color: #0b5ed7;
+}
+
+.text-red-500 {
+  color: #dc3545;
+  font-size: 0.875rem;
+}

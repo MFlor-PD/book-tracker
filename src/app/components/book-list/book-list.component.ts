@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-book-list',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './book-list.component.html'
+  templateUrl: './book-list.component.html',
+  styleUrls: ['./book-list.component.css'],
 })
 export class BookListComponent {
 
