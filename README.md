@@ -2,7 +2,7 @@
 
 **⏰ Estimated Time:** 3 hours
 
-**👤 Candidate:** `[Your Full Name Here]`
+**👤 Candidate:** `Maria Florencia Perez Dall Occhio`
 
 ## 📝 Overview
 
