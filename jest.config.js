@@ -13,8 +13,8 @@ module.exports = {
   coverageReporters: ['html', 'text-summary', 'lcov'],
   moduleFileExtensions: ['ts', 'html', 'js', 'json'],
   testMatch: [
-    '<rootDir>/src/**/__tests__/**/*.(ts|js)',
-    '<rootDir>/src/**/?(*.)(spec|test).(ts|js)'
-  ],
+  '<rootDir>/src/**/*.spec.ts',
+  '<rootDir>/src/**/*.test.ts'
+],
   transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)']
 }; 
